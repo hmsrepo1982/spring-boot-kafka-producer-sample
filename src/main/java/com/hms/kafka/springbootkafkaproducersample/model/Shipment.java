@@ -39,5 +39,12 @@ public class Shipment {
 	public void setDestLocation(String destLocation) {
 		this.destLocation = destLocation;
 	}
+	
+	
+	@Override
+	public String toString() {
+		return "Shipment [shipmentId=" + shipmentId + ", shipmentName=" + shipmentName + ", transportMode="
+				+ transportMode + ", srcLocation=" + srcLocation + ", destLocation=" + destLocation + "]";
+	}
 
 }
