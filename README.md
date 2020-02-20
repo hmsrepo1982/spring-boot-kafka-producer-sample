@@ -20,3 +20,12 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic Harsha_S
 http://localhost:8082/kafka/publish1/FirstKafkaMessage 
 
 what ever after publish1 —> can be seen on the console if consumer is running.
+
+
+FirstKafkaMessage
+
+JSON Stream created to topic - Model was sent.
+
+{"shipmentId":"12345","shipmentName":"ST12345","transportMode":"TruckLoad","srcLocation":"SRCLOC12345","destLocation":null}
+
+
