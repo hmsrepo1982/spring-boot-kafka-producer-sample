@@ -10,6 +10,10 @@ bin/kafka-server-start.sh config/server.properties.
 
 bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions --topic Harsha_Sample
 
+bin/kafka-topics.sh --list --zookeeper localhost:2181 - should list all topics created.
+
+In above case Harsha_Sample.
+
 Step # 2 
 
 A Consumer that will show message posted.
