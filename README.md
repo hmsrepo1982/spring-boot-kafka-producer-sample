@@ -31,7 +31,12 @@ bin/Kafka-topics.sh --zookeeper localhost:2181 --list
 bin/Kafka-topics.sh --zookeeper localhost:2181 --topic MG_Shipment_Sample --describe
 
 
+kafka-console-producer --broker-list localhost:9092 --topic my_topic --property parse.key=true --property key.separator=,
+> key,value
+> another key,another value
 
+
+kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic my_topic --from-beginning --property print.key=true --property key.separator=,
 
 
 
