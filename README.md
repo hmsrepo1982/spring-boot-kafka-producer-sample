@@ -20,3 +20,20 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic Harsha_S
 http://localhost:8082/kafka/publish1/FirstKafkaMessage 
 
 what ever after publish1 —> can be seen on the console if consumer is running.
+-------------------------Update Kafka Components-------------
+
+----------------------------Sample creation -------------
+
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 3 --topic MG_Shipment_Sample
+
+bin/Kafka-topics.sh --zookeeper localhost:2181 --list
+
+bin/Kafka-topics.sh --zookeeper localhost:2181 --topic MG_Shipment_Sample --describe
+
+
+
+
+
+
+
+
